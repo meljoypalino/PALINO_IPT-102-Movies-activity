@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>BSIT3L_Movies</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Views\Movies\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Movies\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Picture\Fight Club.jpg" />
+    <None Include="wwwroot\Picture\Forrest Gump.jpg" />
+    <None Include="wwwroot\Picture\Gladiator.jpg" />
+    <None Include="wwwroot\Picture\Inception_.jpg" />
+    <None Include="wwwroot\Picture\Pulp Fiction.jpg" />
+    <None Include="wwwroot\Picture\Schindler%27s List.jpg" />
+    <None Include="wwwroot\Picture\The Dark Knight.jpg" />
+    <None Include="wwwroot\Picture\The Fellowship of the Ring.jpg" />
+    <None Include="wwwroot\Picture\The Godfather.jpg" />
+    <None Include="wwwroot\Picture\The Matrix.jpg" />
+    <None Include="wwwroot\Picture\The Return of the King.jpg" />
+    <None Include="wwwroot\Picture\The Shawshank Redemption.jpg" />
+    <None Include="wwwroot\Picture\The Two Towers.jpg" />
+    <None Include="wwwroot\Picture\Titanic.png" />
+    <None Include="wwwroot\Picture\Up.jpg" />
+    <None Include="wwwroot\Picture\Your Name.jpg" />
+  </ItemGroup>
+</Project>
